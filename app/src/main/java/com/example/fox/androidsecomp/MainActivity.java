@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        // Inicializa o drawerLayout
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+
+        // Configura o toolbar e o navDrawer
+        setUpToolbar();
+        toolbar.setTitle("XI Secomp");
+        setUpNavDrawer();
+
         // Inicializa o listview e o adapter
         listNoticias = (ListView) findViewById(R.id.listview_noticias);
         adapter = new ListViewAdapter(getApplicationContext());
@@ -63,14 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // Inicializa o drawerLayout
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        navigationView = (NavigationView) findViewById(R.id.navigation_view);
-
-        // Configura o toolbar e o navDrawer
-        setUpToolbar();
-        setUpNavDrawer();
     }
 
     public void loadNoticias() {
@@ -124,9 +125,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
+        toolbar.setTitle("XI Secomp");
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().show();
     }
 
     private void setUpNavDrawer() {

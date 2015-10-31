@@ -47,7 +47,7 @@ public class DetailNoticia extends AppCompatActivity {
     }
 
     private void setUpToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_detail);
         toolbar.setTitle("Notícias");
         // Adiciona o botão de voltar na ActionBar
         setSupportActionBar(toolbar);

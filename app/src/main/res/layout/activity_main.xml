@@ -25,25 +25,25 @@
 
         </android.support.design.widget.AppBarLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:background="@color/background_list_view"
-        tools:context=".MainActivityFragment">
-
-        <ListView
-            android:id="@+id/listview_noticias"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:dividerHeight="16dp"
-            android:divider="@color/background_list_view" />
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@color/background_list_view"
+            tools:context=".MainActivityFragment">
 
-    </RelativeLayout>
+            <ListView
+                android:id="@+id/listview_noticias"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:dividerHeight="16dp"
+                android:divider="@color/background_list_view" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
