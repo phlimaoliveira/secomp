@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">XI Secomp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_noticia">DetailNoticia</string>
+
+    <string name="drawer_open">Drawer is opened</string>
+    <string name="drawer_close">Drawer is closed</string>
+</resources>

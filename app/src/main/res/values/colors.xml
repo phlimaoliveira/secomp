@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title_list_item" type="color">#424242</item>
+    <item name="author_list_item" type="color">#9E9E9E</item>
+    <item name="background_list_view" type="color">#E0E0E0</item>
+    <item name="action_bar_color" type="color">#0288D1</item>
+</resources>
