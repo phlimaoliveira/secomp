@@ -45,6 +45,23 @@ public class MainActivity extends AppCompatActivity {
         // Inicializa o drawerLayout
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
+                switch (menuItem.getItemId()) {
+                    case R.id.participantes:
+                        Intent participantes = new Intent(getApplicationContext(), Participantes.class);
+                        startActivity(participantes);
+                        return true;
+                    case R.id.programacao:
+                        Intent programacao = new Intent(getApplicationContext(), ProgramacaoActivity.class);
+                        startActivity(programacao);
+                    default:
+                        return true;
+                }
+            }
+        });
 
         // Configura o toolbar e o navDrawer
         setUpToolbar();

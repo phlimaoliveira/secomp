@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/bg_programacao"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/horario_textview"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="Horário" />
+
+    <TextView
+        android:id="@+id/nome_palestra_textview"
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="Abertura oficial com show da dupla Hugo e Diego e composição da mesa diretiva." />
+
+    <TextView
+        android:id="@+id/local_palestra_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Local" />
+</LinearLayout>

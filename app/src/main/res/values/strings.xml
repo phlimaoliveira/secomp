@@ -6,4 +6,7 @@
 
     <string name="drawer_open">Drawer is opened</string>
     <string name="drawer_close">Drawer is closed</string>
+    <string name="title_activity_participantes">Participantes</string>
+    <string name="title_activity_detail_participantes">Biografia</string>
+    <string name="title_activity_programacao">Programação</string>
 </resources>

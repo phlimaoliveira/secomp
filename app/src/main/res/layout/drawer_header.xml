@@ -4,16 +4,10 @@
     android:layout_height="200dp"
     android:orientation="vertical">
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/secomp"
-        android:scaleType="centerCrop" />
-    <TextView
-        style="@style/TextAppearance.AppCompat.Subhead"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_margin="16dp"
-        android:text="Tecnologias aplicadas ao agronegócio"
-        android:textColor="@android:color/black" />
+        android:background="@drawable/secomp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
 </FrameLayout>
